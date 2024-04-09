@@ -1,0 +1,259 @@
+[2022-09-05T18:25:42.304] [INFO] aggregator - Created
+[2022-09-05T18:25:42.305] [INFO] aggregator - Setup production
+[2022-09-05T18:25:42.305] [INFO] aggregator - Setup listeners for contract logs
+[2022-09-05T18:25:42.311] [INFO] aggregator - Getting network info
+[2022-09-05T18:25:42.311] [INFO] aggregator - Aggregator rpc url: http://151.97.253.68:8545
+[2022-09-05T18:25:42.311] [INFO] aggregator - IoT rpc url: http://151.97.253.68:8545
+[2022-09-05T18:25:42.559] [INFO] aggregator - Address 0x105a981B608f88ea51CB5FF17eC1F8AB439117B2
+[2022-09-05T18:25:42.559] [INFO] aggregator - Balance 29160509234266936362
+[2022-09-05T18:25:42.560] [INFO] aggregator - BlockNumber 19211413
+[2022-09-05T18:25:42.560] [INFO] aggregator - Resetting smart contract
+[2022-09-05T18:25:43.263] [WARN] aggregator - Error resetting contract Error: processing response error (body="{\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32010,\"message\":\"GasLimitExceeded, Gas limit: 8007811, gas limit of rejected tx: 8954515\"},\"id\":58}", error={"code":-32010}, requestBody="{\"method\":\"eth_sendRawTransaction\",\"params\":[\"0x02f8748301204781f78459682f008502540be4008388a29394cca1c0abf36528eb9e5c909f8296738d37b481aa8084b181a8fcc080a043d3199650d9ac03553d871c4db8eb90f9bcece903641d4b0807611fd8f18464a0445063d2509e7e9156acfeb1bbca654cb83a6c0d09f0d8472446d4b3b325a34e\"],\"id\":58,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:305:32
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.next (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at fulfilled (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'processing response error',
+  code: 'SERVER_ERROR',
+  body: '{"jsonrpc":"2.0","error":{"code":-32010,"message":"GasLimitExceeded, Gas limit: 8007811, gas limit of rejected tx: 8954515"},"id":58}',
+  error: Error: GasLimitExceeded, Gas limit: 8007811, gas limit of rejected tx: 8954515
+      at getResult (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:191:21)
+      at processJsonFunc (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:348:22)
+      at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:280:46
+      at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at Object.next (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+      at fulfilled (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:5:58)
+      at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: -32010,
+    data: undefined
+  },
+  requestBody: '{"method":"eth_sendRawTransaction","params":["0x02f8748301204781f78459682f008502540be4008388a29394cca1c0abf36528eb9e5c909f8296738d37b481aa8084b181a8fcc080a043d3199650d9ac03553d871c4db8eb90f9bcece903641d4b0807611fd8f18464a0445063d2509e7e9156acfeb1bbca654cb83a6c0d09f0d8472446d4b3b325a34e"],"id":58,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  url: 'http://151.97.253.68:8545',
+  transaction: {
+    type: 2,
+    chainId: 73799,
+    nonce: 247,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x59682f00', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x88a293', _isBigNumber: true },
+    to: '0xCCa1c0aBf36528EB9e5c909F8296738D37B481aa',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0xb181a8fc',
+    accessList: [],
+    hash: '0x3e1c3a37def18f00f0219e2e27f647444b7e8246accb47348ee12371c5d29626',
+    v: 0,
+    r: '0x43d3199650d9ac03553d871c4db8eb90f9bcece903641d4b0807611fd8f18464',
+    s: '0x445063d2509e7e9156acfeb1bbca654cb83a6c0d09f0d8472446d4b3b325a34e',
+    from: '0x105a981B608f88ea51CB5FF17eC1F8AB439117B2',
+    confirmations: 0
+  },
+  transactionHash: '0x3e1c3a37def18f00f0219e2e27f647444b7e8246accb47348ee12371c5d29626'
+}
+[2022-09-05T18:25:43.326] [INFO] aggregator - Start production
+[2022-09-05T18:25:43.327] [INFO] iot - 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 - Sending agreement
+[2022-09-05T18:25:43.327] [INFO] iot - 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 - Sending agreement
+[2022-09-05T18:25:43.328] [INFO] iot - 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 - Sending agreement
+[2022-09-05T18:25:43.328] [INFO] iot - 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d - Sending agreement
+[2022-09-05T18:25:43.329] [INFO] iot - 0xc60402099B325726211d96493070816A5fE05e1C - Sending agreement
+[2022-09-05T18:25:43.329] [INFO] iot - 0x907D1f09B0c45734a59401a797A332931372230d - Sending agreement
+[2022-09-05T18:25:43.330] [INFO] iot - 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 - Sending agreement
+[2022-09-05T18:25:43.330] [INFO] iot - 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 - Sending agreement
+[2022-09-05T18:25:43.330] [INFO] iot - 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A - Sending agreement
+[2022-09-05T18:25:43.331] [INFO] iot - 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe - Sending agreement
+[2022-09-05T18:25:43.331] [INFO] iot - 0x766eAaf86306e25955D41ac611f6885AfA1164a8 - Sending agreement
+[2022-09-05T18:25:43.332] [INFO] iot - 0x110f7deE62634F78E2455B5569Ce5D1d9Cef82C9 - Sending agreement
+[2022-09-05T18:25:43.332] [INFO] iot - 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba - Sending agreement
+[2022-09-05T18:25:43.332] [INFO] iot - 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B - Sending agreement
+[2022-09-05T18:25:43.332] [INFO] iot - 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 - Sending agreement
+[2022-09-05T18:25:43.333] [INFO] iot - 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 - Sending agreement
+[2022-09-05T18:25:43.333] [INFO] iot - 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 - Sending agreement
+[2022-09-05T18:25:43.333] [INFO] iot - 0x2661af6D299E142501eA0c9334E3Af653ae620b3 - Sending agreement
+[2022-09-05T18:25:43.333] [INFO] iot - 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 - Sending agreement
+[2022-09-05T18:25:43.334] [INFO] iot - 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 - Sending agreement
+[2022-09-05T18:25:43.334] [INFO] iot - 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 - Sending agreement
+[2022-09-05T18:25:43.334] [INFO] iot - 0x6e70672380465bdCd0574cfF8fFAaAae8858375C - Sending agreement
+[2022-09-05T18:25:43.335] [INFO] iot - 0x84a5736430885cbe526731b0d14373DA71C04f6c - Sending agreement
+[2022-09-05T18:25:43.335] [INFO] iot - 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C - Sending agreement
+[2022-09-05T18:25:43.335] [INFO] iot - 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 - Sending agreement
+[2022-09-05T18:25:43.335] [INFO] iot - 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 - Sending agreement
+[2022-09-05T18:25:43.336] [INFO] iot - 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 - Sending agreement
+[2022-09-05T18:25:43.336] [INFO] iot - 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 - Sending agreement
+[2022-09-05T18:25:43.336] [INFO] iot - 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF - Sending agreement
+[2022-09-05T18:25:43.336] [INFO] iot - 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 - Sending agreement
+[2022-09-05T18:25:43.337] [INFO] iot - 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c - Sending agreement
+[2022-09-05T18:25:43.337] [INFO] iot - 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 - Sending agreement
+[2022-09-05T18:25:43.337] [INFO] iot - 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab - Sending agreement
+[2022-09-05T18:25:43.338] [INFO] iot - 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA - Sending agreement
+[2022-09-05T18:25:43.338] [INFO] iot - 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 - Sending agreement
+[2022-09-05T18:25:43.338] [INFO] iot - 0x351EaB71dbc06Ca4bE1aa8BB4BdC9C8a2Af3fB7f - Sending agreement
+[2022-09-05T18:25:43.339] [INFO] iot - 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 - Sending agreement
+[2022-09-05T18:25:43.339] [INFO] iot - 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 - Sending agreement
+[2022-09-05T18:25:43.339] [INFO] iot - 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 - Sending agreement
+[2022-09-05T18:25:43.339] [INFO] iot - 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 - Sending agreement
+[2022-09-05T18:25:43.339] [INFO] iot - 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a - Sending agreement
+[2022-09-05T18:25:43.340] [INFO] iot - 0x775182A0f0366A172FEaB8eC3621c317AB6B45Be - Sending agreement
+[2022-09-05T18:25:43.340] [INFO] iot - 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 - Sending agreement
+[2022-09-05T18:25:43.340] [INFO] iot - 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 - Sending agreement
+[2022-09-05T18:25:43.340] [INFO] iot - 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 - Sending agreement
+[2022-09-05T18:25:43.340] [INFO] iot - 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 - Sending agreement
+[2022-09-05T18:25:43.341] [INFO] iot - 0x9E447Bf90b086b1db4453D77De5A620918d8342D - Sending agreement
+[2022-09-05T18:25:43.341] [INFO] iot - 0x84C2438d7214f659F762b156c4b68fC827C2035b - Sending agreement
+[2022-09-05T18:25:43.341] [INFO] iot - 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a - Sending agreement
+[2022-09-05T18:25:43.342] [INFO] iot - 0x2FA3C20B9d52644D9925c6BF118C300E4f819034 - Sending agreement
+[2022-09-05T18:25:44.310] [INFO] iot - 0xc60402099B325726211d96493070816A5fE05e1C - Agreement Sent
+[2022-09-05T18:25:44.318] [INFO] iot - 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d - Agreement Sent
+[2022-09-05T18:25:44.319] [INFO] iot - 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 - Agreement Sent
+[2022-09-05T18:25:44.319] [INFO] iot - 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 - Agreement Sent
+[2022-09-05T18:25:44.322] [INFO] iot - 0x907D1f09B0c45734a59401a797A332931372230d - Agreement Sent
+[2022-09-05T18:25:44.327] [INFO] iot - 0x110f7deE62634F78E2455B5569Ce5D1d9Cef82C9 - Agreement Sent
+[2022-09-05T18:25:44.329] [INFO] iot - 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe - Agreement Sent
+[2022-09-05T18:25:44.334] [INFO] iot - 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 - Agreement Sent
+[2022-09-05T18:25:44.334] [INFO] iot - 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A - Agreement Sent
+[2022-09-05T18:25:44.336] [INFO] iot - 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B - Agreement Sent
+[2022-09-05T18:25:44.339] [INFO] iot - 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 - Agreement Sent
+[2022-09-05T18:25:44.341] [INFO] iot - 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 - Agreement Sent
+[2022-09-05T18:25:44.350] [INFO] iot - 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 - Agreement Sent
+[2022-09-05T18:25:44.350] [INFO] iot - 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba - Agreement Sent
+[2022-09-05T18:25:44.351] [INFO] iot - 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 - Agreement Sent
+[2022-09-05T18:25:44.353] [INFO] iot - 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 - Agreement Sent
+[2022-09-05T18:25:44.353] [INFO] iot - 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF - Agreement Sent
+[2022-09-05T18:25:44.353] [INFO] iot - 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c - Agreement Sent
+[2022-09-05T18:25:44.353] [INFO] iot - 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 - Agreement Sent
+[2022-09-05T18:25:44.353] [INFO] iot - 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 - Agreement Sent
+[2022-09-05T18:25:44.353] [INFO] iot - 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab - Agreement Sent
+[2022-09-05T18:25:44.356] [INFO] iot - 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 - Agreement Sent
+[2022-09-05T18:25:44.431] [INFO] iot - 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 - Agreement Sent
+[2022-09-05T18:25:44.445] [INFO] iot - 0x2661af6D299E142501eA0c9334E3Af653ae620b3 - Agreement Sent
+[2022-09-05T18:25:44.518] [INFO] iot - 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 - Agreement Sent
+[2022-09-05T18:25:44.519] [INFO] iot - 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 - Agreement Sent
+[2022-09-05T18:25:44.523] [INFO] iot - 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 - Agreement Sent
+[2022-09-05T18:25:44.523] [INFO] iot - 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 - Agreement Sent
+[2022-09-05T18:25:44.525] [INFO] iot - 0x84a5736430885cbe526731b0d14373DA71C04f6c - Agreement Sent
+[2022-09-05T18:25:44.526] [INFO] iot - 0x9E447Bf90b086b1db4453D77De5A620918d8342D - Agreement Sent
+[2022-09-05T18:25:44.529] [INFO] iot - 0x84C2438d7214f659F762b156c4b68fC827C2035b - Agreement Sent
+[2022-09-05T18:25:44.530] [INFO] iot - 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 - Agreement Sent
+[2022-09-05T18:25:44.533] [INFO] iot - 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 - Agreement Sent
+[2022-09-05T18:25:44.534] [INFO] iot - 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 - Agreement Sent
+[2022-09-05T18:25:44.539] [INFO] iot - 0x6e70672380465bdCd0574cfF8fFAaAae8858375C - Agreement Sent
+[2022-09-05T18:25:44.540] [INFO] iot - 0x766eAaf86306e25955D41ac611f6885AfA1164a8 - Agreement Sent
+[2022-09-05T18:25:44.542] [INFO] iot - 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 - Agreement Sent
+[2022-09-05T18:25:44.545] [INFO] iot - 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a - Agreement Sent
+[2022-09-05T18:25:44.545] [INFO] iot - 0x2FA3C20B9d52644D9925c6BF118C300E4f819034 - Agreement Sent
+[2022-09-05T18:25:44.546] [INFO] iot - 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C - Agreement Sent
+[2022-09-05T18:25:45.243] [INFO] iot - 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 - Agreement Sent
+[2022-09-05T18:25:45.277] [INFO] iot - 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a - Agreement Sent
+[2022-09-05T18:25:45.279] [INFO] iot - 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 - Agreement Sent
+[2022-09-05T18:25:45.282] [INFO] iot - 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 - Agreement Sent
+[2022-09-05T18:25:45.284] [INFO] iot - 0x775182A0f0366A172FEaB8eC3621c317AB6B45Be - Agreement Sent
+[2022-09-05T18:25:45.303] [INFO] iot - 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA - Agreement Sent
+[2022-09-05T18:25:45.307] [INFO] iot - 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 - Agreement Sent
+[2022-09-05T18:25:45.310] [INFO] iot - 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 - Agreement Sent
+[2022-09-05T18:25:45.311] [INFO] iot - 0x351EaB71dbc06Ca4bE1aa8BB4BdC9C8a2Af3fB7f - Agreement Sent
+[2022-09-05T18:25:45.314] [INFO] iot - 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 - Agreement Sent
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 [100,25,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0xc60402099B325726211d96493070816A5fE05e1C [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 [190,47,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 [100,25,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 [100,25,4,4,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 [190,47,4,4,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 [100,25,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0x110f7deE62634F78E2455B5569Ce5D1d9Cef82C9 [280,70,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.669] [INFO] aggregator - RegisterAgreementEvent 0x9E447Bf90b086b1db4453D77De5A620918d8342D [10,2,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 [190,47,4,4,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x775182A0f0366A172FEaB8eC3621c317AB6B45Be [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d [280,70,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x766eAaf86306e25955D41ac611f6885AfA1164a8 [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C [280,70,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA [100,25,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 [280,70,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 [280,70,0,0,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 [280,70,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 [100,25,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 [190,47,4,4,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x84a5736430885cbe526731b0d14373DA71C04f6c [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x2FA3C20B9d52644D9925c6BF118C300E4f819034 [190,47,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 [10,2,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x84C2438d7214f659F762b156c4b68fC827C2035b [100,25,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 [280,70,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0x6e70672380465bdCd0574cfF8fFAaAae8858375C [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.670] [INFO] aggregator - RegisterAgreementEvent 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 [280,70,4,4,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x2661af6D299E142501eA0c9334E3Af653ae620b3 [190,47,5,5,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x907D1f09B0c45734a59401a797A332931372230d [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 [100,25,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 [280,70,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 [190,47,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe [10,2,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 [370,92,0,0,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba [190,47,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x351EaB71dbc06Ca4bE1aa8BB4BdC9C8a2Af3fB7f [280,70,3,3,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab [10,2,0,0,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 [100,25,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF [100,25,2,2,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a [100,25,4,4,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 [100,25,1,1,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 [280,70,5,5,1] - Block 19211416
+[2022-09-05T18:26:02.671] [INFO] aggregator - RegisterAgreementEvent 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 [190,47,2,2,1] - Block 19211416
+[2022-09-05T18:26:23.707] [INFO] aggregator - Request flexibility from 1662396082 to 1662396982 of 20% - 8870 -> 10644
+[2022-09-05T18:27:56.514] [INFO] aggregator - Flexibility request sent
+[2022-09-05T18:28:11.782] [INFO] iot - 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.795] [INFO] iot - 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.797] [INFO] iot - 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.808] [INFO] iot - 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.808] [INFO] iot - 0xc60402099B325726211d96493070816A5fE05e1C - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.808] [INFO] iot - 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.808] [INFO] iot - 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.813] [INFO] iot - 0x766eAaf86306e25955D41ac611f6885AfA1164a8 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.813] [INFO] iot - 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe - Flexibility event: from 1662396082 to 1662396982 with value 12 - BlockNumber: 19211441
+[2022-09-05T18:28:11.819] [INFO] iot - 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.819] [INFO] iot - 0x907D1f09B0c45734a59401a797A332931372230d - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.821] [INFO] iot - 0x110f7deE62634F78E2455B5569Ce5D1d9Cef82C9 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.825] [INFO] iot - 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.826] [INFO] iot - 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.830] [INFO] iot - 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 - Flexibility event: from 1662396082 to 1662396982 with value 12 - BlockNumber: 19211441
+[2022-09-05T18:28:11.831] [INFO] iot - 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.832] [INFO] iot - 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.832] [INFO] iot - 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.834] [INFO] iot - 0x2661af6D299E142501eA0c9334E3Af653ae620b3 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.834] [INFO] iot - 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.841] [INFO] iot - 0x6e70672380465bdCd0574cfF8fFAaAae8858375C - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.841] [INFO] iot - 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.841] [INFO] iot - 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.841] [INFO] iot - 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.845] [INFO] iot - 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.850] [INFO] iot - 0x84a5736430885cbe526731b0d14373DA71C04f6c - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.851] [INFO] iot - 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.851] [INFO] iot - 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.851] [INFO] iot - 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.851] [INFO] iot - 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.859] [INFO] iot - 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.859] [INFO] iot - 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.859] [INFO] iot - 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab - Flexibility event: from 1662396082 to 1662396982 with value 12 - BlockNumber: 19211441
+[2022-09-05T18:28:11.860] [INFO] iot - 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.861] [INFO] iot - 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.866] [INFO] iot - 0x351EaB71dbc06Ca4bE1aa8BB4BdC9C8a2Af3fB7f - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.868] [INFO] iot - 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.868] [INFO] iot - 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.868] [INFO] iot - 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.872] [INFO] iot - 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:11.879] [INFO] iot - 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.879] [INFO] iot - 0x775182A0f0366A172FEaB8eC3621c317AB6B45Be - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.885] [INFO] iot - 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 - Flexibility event: from 1662396082 to 1662396982 with value 444 - BlockNumber: 19211441
+[2022-09-05T18:28:11.886] [INFO] iot - 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:11.886] [INFO] iot - 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.893] [INFO] iot - 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 - Flexibility event: from 1662396082 to 1662396982 with value 336 - BlockNumber: 19211441
+[2022-09-05T18:28:11.895] [INFO] iot - 0x84C2438d7214f659F762b156c4b68fC827C2035b - Flexibility event: from 1662396082 to 1662396982 with value 120 - BlockNumber: 19211441
+[2022-09-05T18:28:12.003] [INFO] iot - 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441
+[2022-09-05T18:28:12.004] [INFO] iot - 0x9E447Bf90b086b1db4453D77De5A620918d8342D - Flexibility event: from 1662396082 to 1662396982 with value 12 - BlockNumber: 19211441
+[2022-09-05T18:28:12.005] [INFO] iot - 0x2FA3C20B9d52644D9925c6BF118C300E4f819034 - Flexibility event: from 1662396082 to 1662396982 with value 228 - BlockNumber: 19211441

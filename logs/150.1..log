@@ -1,0 +1,1449 @@
+[2022-09-05T13:34:24.114] [INFO] aggregator - Created
+[2022-09-05T13:34:24.115] [INFO] aggregator - Setup production
+[2022-09-05T13:34:24.115] [INFO] aggregator - Setup listeners for contract logs
+[2022-09-05T13:34:24.121] [INFO] aggregator - Getting network info
+[2022-09-05T13:34:24.121] [INFO] aggregator - Aggregator rpc url: http://151.97.253.68:8545
+[2022-09-05T13:34:24.121] [INFO] aggregator - IoT rpc url: http://151.97.253.68:8545
+[2022-09-05T13:34:24.151] [INFO] aggregator - Address 0x105a981B608f88ea51CB5FF17eC1F8AB439117B2
+[2022-09-05T13:34:24.152] [INFO] aggregator - Balance 31738818534322936362
+[2022-09-05T13:34:24.152] [INFO] aggregator - BlockNumber 19208267
+[2022-09-05T13:34:24.152] [INFO] aggregator - Resetting smart contract
+[2022-09-05T13:34:24.283] [WARN] aggregator - Error resetting contract Error: processing response error (body="{\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32010,\"message\":\"GasLimitExceeded, Gas limit: 8000000, gas limit of rejected tx: 8954515\"},\"id\":58}", error={"code":-32010}, requestBody="{\"method\":\"eth_sendRawTransaction\",\"params\":[\"0x02f8758301204781f48505d21dba008505d21dba008388a29394cca1c0abf36528eb9e5c909f8296738d37b481aa8084b181a8fcc080a067db19de2a39bc461d527d70db2669fb17ef3163eec865b91673298b6bd5d12da06debeb8e6458c887f15183cc54bf00f37ed93861794e0c33f1f5f714c09d6d7d\"],\"id\":58,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:305:32
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.next (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at fulfilled (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'processing response error',
+  code: 'SERVER_ERROR',
+  body: '{"jsonrpc":"2.0","error":{"code":-32010,"message":"GasLimitExceeded, Gas limit: 8000000, gas limit of rejected tx: 8954515"},"id":58}',
+  error: Error: GasLimitExceeded, Gas limit: 8000000, gas limit of rejected tx: 8954515
+      at getResult (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:191:21)
+      at processJsonFunc (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:348:22)
+      at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:280:46
+      at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at Object.next (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+      at fulfilled (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:5:58)
+      at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: -32010,
+    data: undefined
+  },
+  requestBody: '{"method":"eth_sendRawTransaction","params":["0x02f8758301204781f48505d21dba008505d21dba008388a29394cca1c0abf36528eb9e5c909f8296738d37b481aa8084b181a8fcc080a067db19de2a39bc461d527d70db2669fb17ef3163eec865b91673298b6bd5d12da06debeb8e6458c887f15183cc54bf00f37ed93861794e0c33f1f5f714c09d6d7d"],"id":58,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  url: 'http://151.97.253.68:8545',
+  transaction: {
+    type: 2,
+    chainId: 73799,
+    nonce: 244,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x88a293', _isBigNumber: true },
+    to: '0xCCa1c0aBf36528EB9e5c909F8296738D37B481aa',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0xb181a8fc',
+    accessList: [],
+    hash: '0x373f1914e6cdfbbab1f4672ec486e232adc716c749b2c020e08f4a98d614a89f',
+    v: 0,
+    r: '0x67db19de2a39bc461d527d70db2669fb17ef3163eec865b91673298b6bd5d12d',
+    s: '0x6debeb8e6458c887f15183cc54bf00f37ed93861794e0c33f1f5f714c09d6d7d',
+    from: '0x105a981B608f88ea51CB5FF17eC1F8AB439117B2',
+    confirmations: 0
+  },
+  transactionHash: '0x373f1914e6cdfbbab1f4672ec486e232adc716c749b2c020e08f4a98d614a89f'
+}
+[2022-09-05T13:34:24.453] [INFO] aggregator - Start production
+[2022-09-05T13:34:24.453] [INFO] iot - 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 - Sending agreement
+[2022-09-05T13:34:24.454] [INFO] iot - 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 - Sending agreement
+[2022-09-05T13:34:24.454] [INFO] iot - 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 - Sending agreement
+[2022-09-05T13:34:24.455] [INFO] iot - 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d - Sending agreement
+[2022-09-05T13:34:24.455] [INFO] iot - 0xc60402099B325726211d96493070816A5fE05e1C - Sending agreement
+[2022-09-05T13:34:24.456] [INFO] iot - 0x907D1f09B0c45734a59401a797A332931372230d - Sending agreement
+[2022-09-05T13:34:24.456] [INFO] iot - 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 - Sending agreement
+[2022-09-05T13:34:24.456] [INFO] iot - 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 - Sending agreement
+[2022-09-05T13:34:24.457] [INFO] iot - 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A - Sending agreement
+[2022-09-05T13:34:24.457] [INFO] iot - 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe - Sending agreement
+[2022-09-05T13:34:24.457] [INFO] iot - 0x766eAaf86306e25955D41ac611f6885AfA1164a8 - Sending agreement
+[2022-09-05T13:34:24.458] [INFO] iot - 0x110f7deE62634F78E2455B5569Ce5D1d9Cef82C9 - Sending agreement
+[2022-09-05T13:34:24.458] [INFO] iot - 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba - Sending agreement
+[2022-09-05T13:34:24.458] [INFO] iot - 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B - Sending agreement
+[2022-09-05T13:34:24.459] [INFO] iot - 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 - Sending agreement
+[2022-09-05T13:34:24.459] [INFO] iot - 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 - Sending agreement
+[2022-09-05T13:34:24.459] [INFO] iot - 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 - Sending agreement
+[2022-09-05T13:34:24.460] [INFO] iot - 0x2661af6D299E142501eA0c9334E3Af653ae620b3 - Sending agreement
+[2022-09-05T13:34:24.460] [INFO] iot - 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 - Sending agreement
+[2022-09-05T13:34:24.460] [INFO] iot - 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 - Sending agreement
+[2022-09-05T13:34:24.461] [INFO] iot - 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 - Sending agreement
+[2022-09-05T13:34:24.461] [INFO] iot - 0x6e70672380465bdCd0574cfF8fFAaAae8858375C - Sending agreement
+[2022-09-05T13:34:24.462] [INFO] iot - 0x84a5736430885cbe526731b0d14373DA71C04f6c - Sending agreement
+[2022-09-05T13:34:24.462] [INFO] iot - 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C - Sending agreement
+[2022-09-05T13:34:24.462] [INFO] iot - 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 - Sending agreement
+[2022-09-05T13:34:24.462] [INFO] iot - 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 - Sending agreement
+[2022-09-05T13:34:24.463] [INFO] iot - 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 - Sending agreement
+[2022-09-05T13:34:24.463] [INFO] iot - 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 - Sending agreement
+[2022-09-05T13:34:24.463] [INFO] iot - 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF - Sending agreement
+[2022-09-05T13:34:24.464] [INFO] iot - 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 - Sending agreement
+[2022-09-05T13:34:24.464] [INFO] iot - 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c - Sending agreement
+[2022-09-05T13:34:24.464] [INFO] iot - 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 - Sending agreement
+[2022-09-05T13:34:24.464] [INFO] iot - 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab - Sending agreement
+[2022-09-05T13:34:24.465] [INFO] iot - 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA - Sending agreement
+[2022-09-05T13:34:24.465] [INFO] iot - 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 - Sending agreement
+[2022-09-05T13:34:24.465] [INFO] iot - 0x351EaB71dbc06Ca4bE1aa8BB4BdC9C8a2Af3fB7f - Sending agreement
+[2022-09-05T13:34:24.466] [INFO] iot - 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 - Sending agreement
+[2022-09-05T13:34:24.466] [INFO] iot - 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 - Sending agreement
+[2022-09-05T13:34:24.466] [INFO] iot - 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 - Sending agreement
+[2022-09-05T13:34:24.466] [INFO] iot - 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 - Sending agreement
+[2022-09-05T13:34:24.467] [INFO] iot - 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a - Sending agreement
+[2022-09-05T13:34:24.467] [INFO] iot - 0x775182A0f0366A172FEaB8eC3621c317AB6B45Be - Sending agreement
+[2022-09-05T13:34:24.467] [INFO] iot - 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 - Sending agreement
+[2022-09-05T13:34:24.467] [INFO] iot - 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 - Sending agreement
+[2022-09-05T13:34:24.468] [INFO] iot - 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 - Sending agreement
+[2022-09-05T13:34:24.468] [INFO] iot - 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 - Sending agreement
+[2022-09-05T13:34:24.468] [INFO] iot - 0x9E447Bf90b086b1db4453D77De5A620918d8342D - Sending agreement
+[2022-09-05T13:34:24.468] [INFO] iot - 0x84C2438d7214f659F762b156c4b68fC827C2035b - Sending agreement
+[2022-09-05T13:34:24.469] [INFO] iot - 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a - Sending agreement
+[2022-09-05T13:34:24.469] [INFO] iot - 0x2FA3C20B9d52644D9925c6BF118C300E4f819034 - Sending agreement
+[2022-09-05T13:34:24.469] [INFO] iot - 0xa9a275303192e46278B8f1b89C19e87c854cc431 - Sending agreement
+[2022-09-05T13:34:24.470] [INFO] iot - 0xff856E261864eBbc9adD47825dd773950f859228 - Sending agreement
+[2022-09-05T13:34:24.470] [INFO] iot - 0xF833D903E4E960d3C1403B3Da6482E3A6fa4FC64 - Sending agreement
+[2022-09-05T13:34:24.470] [INFO] iot - 0xA5DCb7e2fa57278F3288D8ff212D220Da26053F2 - Sending agreement
+[2022-09-05T13:34:24.470] [INFO] iot - 0xb30EC68a81BEE3588eec4E525e3d2d10bE8807BB - Sending agreement
+[2022-09-05T13:34:24.471] [INFO] iot - 0x721F999cF0bA0228cd43720a1BB0021CD0203004 - Sending agreement
+[2022-09-05T13:34:24.471] [INFO] iot - 0x9e1b2dA6bFa5A21519cE387E05d2c3528CAB57eB - Sending agreement
+[2022-09-05T13:34:24.471] [INFO] iot - 0xaf0F2dfe9af92821a254B06a43CD61dD1afE3059 - Sending agreement
+[2022-09-05T13:34:24.471] [INFO] iot - 0x99be66ba76b1012c059c02d31c4Ac845f28A7cc7 - Sending agreement
+[2022-09-05T13:34:24.472] [INFO] iot - 0x1D2e0aCd7A4c405ccBe02E7eA136fE4A963b14b1 - Sending agreement
+[2022-09-05T13:34:24.472] [INFO] iot - 0x111Ab7fb8078359474f217e23DdFB0A494C1fF5C - Sending agreement
+[2022-09-05T13:34:24.472] [INFO] iot - 0xD40C57F57dF6C2f8D482Aac8554F4464cB4B67Bd - Sending agreement
+[2022-09-05T13:34:24.472] [INFO] iot - 0x3AF08df6246704089AA4E572EF497e7eD2ECefbE - Sending agreement
+[2022-09-05T13:34:24.472] [INFO] iot - 0x17D903588e29b28bDAEbac7f9c261AF030F905ae - Sending agreement
+[2022-09-05T13:34:24.473] [INFO] iot - 0x8B88d7adE520C6335d618E6CDeEdb6db508fed89 - Sending agreement
+[2022-09-05T13:34:24.473] [INFO] iot - 0x6B7A14e9822ef6111bF54fd3D2d0F9e63a4a7b6B - Sending agreement
+[2022-09-05T13:34:24.473] [INFO] iot - 0x143D06Db534BEdb0A5baFdd78720A2fE7ae16Bd3 - Sending agreement
+[2022-09-05T13:34:24.473] [INFO] iot - 0xc89bDDbBA6e728A829335a3Dfa15E81476b75424 - Sending agreement
+[2022-09-05T13:34:24.474] [INFO] iot - 0x058D9bD43544268934BbFf41851eDfaca8896ED8 - Sending agreement
+[2022-09-05T13:34:24.474] [INFO] iot - 0x0b34Ef8536A384e966B62d48f38775CA9a429715 - Sending agreement
+[2022-09-05T13:34:24.474] [INFO] iot - 0x961341607dbD09d3264fb258C2885dd09965fb91 - Sending agreement
+[2022-09-05T13:34:24.474] [INFO] iot - 0x31aD1d48e3b4Ea9Cee418937668A4008e4A85fD2 - Sending agreement
+[2022-09-05T13:34:24.474] [INFO] iot - 0x4DE3E277554A0FEE4Abe83048A0db20eF756F353 - Sending agreement
+[2022-09-05T13:34:24.475] [INFO] iot - 0xa6E81878e63a5e2f6288A31c22F9808A4d1d687C - Sending agreement
+[2022-09-05T13:34:24.475] [INFO] iot - 0x72D29e79A94e889aa06527Fe3e1E1DD873C53879 - Sending agreement
+[2022-09-05T13:34:24.475] [INFO] iot - 0x2533E0Da9F0529C4D0F94aFc3E860830a230BA8B - Sending agreement
+[2022-09-05T13:34:24.475] [INFO] iot - 0x1A3707004D428D7ad32df14d3FA9a83fb279D4eE - Sending agreement
+[2022-09-05T13:34:24.476] [INFO] iot - 0x66A4b39aEf9b2d8115fabfeb3721f8c728691Eb4 - Sending agreement
+[2022-09-05T13:34:24.476] [INFO] iot - 0x7ed97E3c4Be4A594c0f9D1601F6Fc6195457b40B - Sending agreement
+[2022-09-05T13:34:24.477] [INFO] iot - 0x32cF0b708CDa0B8126e23FDa745F51E1Dc93307B - Sending agreement
+[2022-09-05T13:34:24.477] [INFO] iot - 0x1b62D68049D4641481f219a3142d264b2a56379f - Sending agreement
+[2022-09-05T13:34:24.477] [INFO] iot - 0x9Be6a10eEA224E5918CEe4E3aB74e2EF24B229B9 - Sending agreement
+[2022-09-05T13:34:24.477] [INFO] iot - 0x64BE97a6BdBB9a11bb660B4E04cB1f51081bAaF7 - Sending agreement
+[2022-09-05T13:34:24.477] [INFO] iot - 0x26a8326133c0da55d91AC2edD9a7D705EA18dCfE - Sending agreement
+[2022-09-05T13:34:24.478] [INFO] iot - 0x83fCdEA68B9Fba98Cd2DC3F419718C13d1Cc7B77 - Sending agreement
+[2022-09-05T13:34:24.478] [INFO] iot - 0xB497C077f97d979Bcada841342f00bAe480f2e4C - Sending agreement
+[2022-09-05T13:34:24.478] [INFO] iot - 0xE65626DFcfeF5a3264b81274B36aeB612fd0f9f1 - Sending agreement
+[2022-09-05T13:34:24.478] [INFO] iot - 0x2fB4BF68407b4b79a8a0482A945953A26d9f8B54 - Sending agreement
+[2022-09-05T13:34:24.479] [INFO] iot - 0xBe98C0bfefa813798158805E5212C0f1ffEA894B - Sending agreement
+[2022-09-05T13:34:24.479] [INFO] iot - 0xC1C2e13B41CC0FDbe0026ED46a0801563846579f - Sending agreement
+[2022-09-05T13:34:24.479] [INFO] iot - 0x929755d256FAcFF26b8e9158B5d5dA999137D915 - Sending agreement
+[2022-09-05T13:34:24.479] [INFO] iot - 0xD57FCF696a472B8e7176A607e40523AE920B0aE4 - Sending agreement
+[2022-09-05T13:34:24.479] [INFO] iot - 0x82BcfdF80c23ACE81De2E2DE119731Ca8d17780c - Sending agreement
+[2022-09-05T13:34:24.480] [INFO] iot - 0x8972341a88cA7458f57988f99D8dFf833a76D683 - Sending agreement
+[2022-09-05T13:34:24.480] [INFO] iot - 0xB329F4a74dfF55C488A25D70EA6Db5116d32b23D - Sending agreement
+[2022-09-05T13:34:24.480] [INFO] iot - 0xC4671118D6dE5299BC631EC6E8D480De79005b3c - Sending agreement
+[2022-09-05T13:34:24.480] [INFO] iot - 0x8e961D8087B30E92FbDF795FF878E33B3ff9C254 - Sending agreement
+[2022-09-05T13:34:24.480] [INFO] iot - 0xab741c22A504F18148D4e7a1BCa6fB10B95c0Aa9 - Sending agreement
+[2022-09-05T13:34:24.481] [INFO] iot - 0xF0Ed60E8E42D15Fa7e1ac4bE075613a1C4C45c44 - Sending agreement
+[2022-09-05T13:34:24.481] [INFO] iot - 0x96929e51fe4C26B9EcbDD178F97F6a31C238DD35 - Sending agreement
+[2022-09-05T13:34:24.481] [INFO] iot - 0x79a38982825be307FE2F332F9E40C732Ab7Adb59 - Sending agreement
+[2022-09-05T13:34:24.481] [INFO] iot - 0xf7871CE8846Be2c1389244d0DaD24c3420eb4414 - Sending agreement
+[2022-09-05T13:34:24.482] [INFO] iot - 0x885ABbfF09B584a44b6f5B8686E0bFb5a4771097 - Sending agreement
+[2022-09-05T13:34:24.482] [INFO] iot - 0xC9F0C6ED4E68B00B915c70a3cE34fc73D8564b34 - Sending agreement
+[2022-09-05T13:34:24.482] [INFO] iot - 0xb7a6BD43d9567F0E28794f47797035A36c921abC - Sending agreement
+[2022-09-05T13:34:24.482] [INFO] iot - 0xc21a81c1d648882902917E0c8100a74106c47506 - Sending agreement
+[2022-09-05T13:34:24.483] [INFO] iot - 0x4894ea62BFa4F1FdBC1aE380028d42a5aB9c24B6 - Sending agreement
+[2022-09-05T13:34:24.483] [INFO] iot - 0x60F2f63DDe60e27ffc2D3c13086Fec19Dc14927E - Sending agreement
+[2022-09-05T13:34:24.483] [INFO] iot - 0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9 - Sending agreement
+[2022-09-05T13:34:24.484] [INFO] iot - 0x93C3ECf7C71F69a2d97040012abf71b0c69a42F6 - Sending agreement
+[2022-09-05T13:34:24.484] [INFO] iot - 0xd4F8AA14954c936579839157445DDaCb2B1fd601 - Sending agreement
+[2022-09-05T13:34:24.484] [INFO] iot - 0xe0345059031F28ac6fc97f526dE197ec904d1b9A - Sending agreement
+[2022-09-05T13:34:24.484] [INFO] iot - 0x814C9Fdaa7e0099A84f53F3d9F2bca082dfFDF9B - Sending agreement
+[2022-09-05T13:34:24.485] [INFO] iot - 0xa492E331Fee4dCaCf15A9A537d92013F563D6814 - Sending agreement
+[2022-09-05T13:34:24.485] [INFO] iot - 0x911fa198c384048781889Ea16476a3810E936389 - Sending agreement
+[2022-09-05T13:34:24.485] [INFO] iot - 0x2A8BFadfBC58B15EFcfbaB97a584477F57348a14 - Sending agreement
+[2022-09-05T13:34:24.485] [INFO] iot - 0x731e7E59cd22c3a2B101923137f314F0F296BA23 - Sending agreement
+[2022-09-05T13:34:24.485] [INFO] iot - 0x0C755B9c520E93DB98Ceed5FC5Bd07099407Fcd0 - Sending agreement
+[2022-09-05T13:34:24.486] [INFO] iot - 0x0A7DfE7f8123Ee3F42d7CCae7a6b0e7ac4B513F2 - Sending agreement
+[2022-09-05T13:34:24.486] [INFO] iot - 0x8896f62F928178533c8fc6D1dD52800334832d60 - Sending agreement
+[2022-09-05T13:34:24.486] [INFO] iot - 0xe90C0c92628c153e9C309bDa18Bf99eE6a6A640d - Sending agreement
+[2022-09-05T13:34:24.486] [INFO] iot - 0xe91e9Ceac8cD4637dC4A28198F1Ca322Ed0f9760 - Sending agreement
+[2022-09-05T13:34:24.487] [INFO] iot - 0x5b3627057c982e3da3f4e982cA1d01e1A75441C5 - Sending agreement
+[2022-09-05T13:34:24.487] [INFO] iot - 0xaf43110154bEdf396f4cc5947C233e28e4fed4bA - Sending agreement
+[2022-09-05T13:34:24.487] [INFO] iot - 0x675cdAFfbC2d20949Fd8F3AF0d8ceEEff74f6270 - Sending agreement
+[2022-09-05T13:34:24.487] [INFO] iot - 0xb6b59340e863835Ca8410c229389E881bD34D6Ec - Sending agreement
+[2022-09-05T13:34:24.487] [INFO] iot - 0xAA90A5BfdF779A9d7AD09d64F62823b9e3a1F2d0 - Sending agreement
+[2022-09-05T13:34:24.488] [INFO] iot - 0x80e1FA7Ef2fdfD40B9A53B4FdC3458D2EadCfCC1 - Sending agreement
+[2022-09-05T13:34:24.488] [INFO] iot - 0xac636D5658b40d62e499d44cD99BEFb794FCb63E - Sending agreement
+[2022-09-05T13:34:24.488] [INFO] iot - 0xd0F89269B30150b221027D60a5D11CaaF1EB939b - Sending agreement
+[2022-09-05T13:34:24.488] [INFO] iot - 0x559Ba5d9116E8984a076b02b1B3185108Df610a9 - Sending agreement
+[2022-09-05T13:34:24.489] [INFO] iot - 0x9Cb065289a7B5E88C9E67A4740F9dd56945Beb14 - Sending agreement
+[2022-09-05T13:34:24.489] [INFO] iot - 0xb431E0193193790601F40659D038fc5e70aA192F - Sending agreement
+[2022-09-05T13:34:24.489] [INFO] iot - 0x8D538dC56f87A688A47d3ec937231BD39591673c - Sending agreement
+[2022-09-05T13:34:24.489] [INFO] iot - 0x85FAe5e7032C2Ee1391b97426679BBC1e080f93E - Sending agreement
+[2022-09-05T13:34:24.489] [INFO] iot - 0x669F299b707A448e8161d0785Dcbb6E12DE6733b - Sending agreement
+[2022-09-05T13:34:24.490] [INFO] iot - 0xA0fc4436E13E3Eebcb31D4D0E8B779ff42CC0C6e - Sending agreement
+[2022-09-05T13:34:24.490] [INFO] iot - 0x6Ee69909894dFD89df0E0e200f405AE8421b4b59 - Sending agreement
+[2022-09-05T13:34:24.491] [INFO] iot - 0x7084cB2A34581f73d06356601CC23C203E4011a3 - Sending agreement
+[2022-09-05T13:34:24.491] [INFO] iot - 0x7741276504559a6c2A1454a6398Ac2efBFAdd034 - Sending agreement
+[2022-09-05T13:34:24.491] [INFO] iot - 0xEa2392232c8274383202b8a2a3Fb53C050FAA5F0 - Sending agreement
+[2022-09-05T13:34:24.491] [INFO] iot - 0x3046cA212B09b023b69bf5e080bBd87aBDB00C38 - Sending agreement
+[2022-09-05T13:34:24.492] [INFO] iot - 0xA37a90fe8694b8945e3be418E7705645d1CbFf38 - Sending agreement
+[2022-09-05T13:34:24.492] [INFO] iot - 0x29Fb6625F46877aAe7c4422A6c18bf03330e47a5 - Sending agreement
+[2022-09-05T13:34:24.492] [INFO] iot - 0x48836F6eC727Af008820B5931F671f8d368a557c - Sending agreement
+[2022-09-05T13:34:24.492] [INFO] iot - 0x5c988dE4888164890DfE8B8d5BA24d9A61477c01 - Sending agreement
+[2022-09-05T13:34:24.492] [INFO] iot - 0xe3bE0Da0470F207203581A3038C9fD07c0c477f5 - Sending agreement
+[2022-09-05T13:34:24.493] [INFO] iot - 0x119aB82dAe810a856D523A1c71C2B4636dcEDf03 - Sending agreement
+[2022-09-05T13:34:24.493] [INFO] iot - 0x4c5922016c0719F3be058ae7065e82aD1c897969 - Sending agreement
+[2022-09-05T13:34:24.493] [INFO] iot - 0xe1B6091a59952FaA223634865483E1dBdb363755 - Sending agreement
+[2022-09-05T13:34:24.852] [WARN] iot - 0x4894ea62BFa4F1FdBC1aE380028d42a5aB9c24B6 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.854] [WARN] iot - 0x82BcfdF80c23ACE81De2E2DE119731Ca8d17780c - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.854] [WARN] iot - 0x775182A0f0366A172FEaB8eC3621c317AB6B45Be - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.855] [WARN] iot - 0x110f7deE62634F78E2455B5569Ce5D1d9Cef82C9 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.861] [WARN] iot - 0x3AF08df6246704089AA4E572EF497e7eD2ECefbE - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.861] [WARN] iot - 0xA5DCb7e2fa57278F3288D8ff212D220Da26053F2 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.862] [WARN] iot - 0xa9a275303192e46278B8f1b89C19e87c854cc431 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.863] [WARN] iot - 0x99be66ba76b1012c059c02d31c4Ac845f28A7cc7 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.863] [WARN] iot - 0x351EaB71dbc06Ca4bE1aa8BB4BdC9C8a2Af3fB7f - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.864] [WARN] iot - 0x32cF0b708CDa0B8126e23FDa745F51E1Dc93307B - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.866] [WARN] iot - 0xaf0F2dfe9af92821a254B06a43CD61dD1afE3059 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.866] [WARN] iot - 0xe0345059031F28ac6fc97f526dE197ec904d1b9A - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.867] [WARN] iot - 0x961341607dbD09d3264fb258C2885dd09965fb91 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.867] [WARN] iot - 0xb6b59340e863835Ca8410c229389E881bD34D6Ec - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.868] [WARN] iot - 0x731e7E59cd22c3a2B101923137f314F0F296BA23 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.868] [WARN] iot - 0x2FA3C20B9d52644D9925c6BF118C300E4f819034 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.869] [WARN] iot - 0xab741c22A504F18148D4e7a1BCa6fB10B95c0Aa9 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.869] [WARN] iot - 0xb7a6BD43d9567F0E28794f47797035A36c921abC - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.871] [WARN] iot - 0x84C2438d7214f659F762b156c4b68fC827C2035b - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.872] [WARN] iot - 0xc89bDDbBA6e728A829335a3Dfa15E81476b75424 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.872] [WARN] iot - 0x9Be6a10eEA224E5918CEe4E3aB74e2EF24B229B9 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.876] [WARN] iot - 0x6B7A14e9822ef6111bF54fd3D2d0F9e63a4a7b6B - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.876] [WARN] iot - 0x8B88d7adE520C6335d618E6CDeEdb6db508fed89 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.876] [WARN] iot - 0x66A4b39aEf9b2d8115fabfeb3721f8c728691Eb4 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.921] [WARN] iot - 0x7741276504559a6c2A1454a6398Ac2efBFAdd034 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.925] [WARN] iot - 0xe90C0c92628c153e9C309bDa18Bf99eE6a6A640d - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.925] [WARN] iot - 0xA37a90fe8694b8945e3be418E7705645d1CbFf38 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.926] [WARN] iot - 0xd4F8AA14954c936579839157445DDaCb2B1fd601 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.926] [WARN] iot - 0x119aB82dAe810a856D523A1c71C2B4636dcEDf03 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.929] [WARN] iot - 0xA0fc4436E13E3Eebcb31D4D0E8B779ff42CC0C6e - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.929] [WARN] iot - 0x911fa198c384048781889Ea16476a3810E936389 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.930] [WARN] iot - 0x0C755B9c520E93DB98Ceed5FC5Bd07099407Fcd0 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.930] [WARN] iot - 0xD57FCF696a472B8e7176A607e40523AE920B0aE4 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.931] [WARN] iot - 0x60F2f63DDe60e27ffc2D3c13086Fec19Dc14927E - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.932] [WARN] iot - 0x8896f62F928178533c8fc6D1dD52800334832d60 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.932] [WARN] iot - 0x1b62D68049D4641481f219a3142d264b2a56379f - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.932] [WARN] iot - 0x5b3627057c982e3da3f4e982cA1d01e1A75441C5 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.933] [WARN] iot - 0x48836F6eC727Af008820B5931F671f8d368a557c - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.933] [WARN] iot - 0x7084cB2A34581f73d06356601CC23C203E4011a3 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.933] [WARN] iot - 0x85FAe5e7032C2Ee1391b97426679BBC1e080f93E - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.934] [WARN] iot - 0x814C9Fdaa7e0099A84f53F3d9F2bca082dfFDF9B - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.937] [WARN] iot - 0x8D538dC56f87A688A47d3ec937231BD39591673c - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.938] [WARN] iot - 0xe1B6091a59952FaA223634865483E1dBdb363755 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.938] [WARN] iot - 0xAA90A5BfdF779A9d7AD09d64F62823b9e3a1F2d0 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:24.939] [WARN] iot - 0xc21a81c1d648882902917E0c8100a74106c47506 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:25.058] [WARN] iot - 0x721F999cF0bA0228cd43720a1BB0021CD0203004 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getTransactionCount\",\"params\":[\"0x721f999cf0ba0228cd43720a1bb0021cd0203004\",\"pending\"],\"id\":51,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getTransactionCount","params":["0x721f999cf0ba0228cd43720a1bb0021cd0203004","pending"],"id":51,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:25.267] [WARN] iot - 0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9 - 2 <ref *1> Error: cannot estimate gas; transaction may fail or may require manual gas limit [ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (error={"reason":"missing response","code":"SERVER_ERROR","requestBody":"{\"method\":\"eth_estimateGas\",\"params\":[{\"type\":\"0x2\",\"maxFeePerGas\":\"0x5d21dba00\",\"maxPriorityFeePerGas\":\"0x5d21dba00\",\"from\":\"0x667c9bc78beae7b5d70a40ee26cff9a526bc91d9\",\"to\":\"0xcca1c0abf36528eb9e5c909f8296738d37b481aa\",\"data\":\"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":53,\"jsonrpc\":\"2.0\"}","requestMethod":"POST","serverError":{"errno":-54,"code":"ECONNRESET","syscall":"read"},"url":"http://151.97.253.68:8545"}, tx={"data":"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001","to":{},"from":"0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9","type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x05d21dba00"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x05d21dba00"},"nonce":{},"gasLimit":{},"chainId":{}}, code=UNPREDICTABLE_GAS_LIMIT, version=abstract-signer/5.6.2)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/abstract-signer/lib/index.js:365:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 7) {
+  reason: 'cannot estimate gas; transaction may fail or may require manual gas limit',
+  code: 'UNPREDICTABLE_GAS_LIMIT',
+  error: Error: missing response (requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"type\":\"0x2\",\"maxFeePerGas\":\"0x5d21dba00\",\"maxPriorityFeePerGas\":\"0x5d21dba00\",\"from\":\"0x667c9bc78beae7b5d70a40ee26cff9a526bc91d9\",\"to\":\"0xcca1c0abf36528eb9e5c909f8296738d37b481aa\",\"data\":\"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":53,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+      at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+      at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+      at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+      at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+      at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+      at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: 'missing response',
+    code: 'SERVER_ERROR',
+    requestBody: '{"method":"eth_estimateGas","params":[{"type":"0x2","maxFeePerGas":"0x5d21dba00","maxPriorityFeePerGas":"0x5d21dba00","from":"0x667c9bc78beae7b5d70a40ee26cff9a526bc91d9","to":"0xcca1c0abf36528eb9e5c909f8296738d37b481aa","data":"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001"}],"id":53,"jsonrpc":"2.0"}',
+    requestMethod: 'POST',
+    serverError: Error: read ECONNRESET
+        at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'http://151.97.253.68:8545'
+  },
+  tx: {
+    data: '0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001',
+    to: Promise { '0xCCa1c0aBf36528EB9e5c909F8296738D37B481aa' },
+    from: '0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9',
+    type: 2,
+    maxFeePerGas: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+    maxPriorityFeePerGas: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+    nonce: Promise { 16 },
+    gasLimit: Promise { <rejected> [Circular *1] },
+    chainId: Promise { 73799 }
+  }
+}
+[2022-09-05T13:34:25.268] [WARN] iot - 0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9 - Registering agreement <ref *1> Error: cannot estimate gas; transaction may fail or may require manual gas limit [ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (error={"reason":"missing response","code":"SERVER_ERROR","requestBody":"{\"method\":\"eth_estimateGas\",\"params\":[{\"type\":\"0x2\",\"maxFeePerGas\":\"0x5d21dba00\",\"maxPriorityFeePerGas\":\"0x5d21dba00\",\"from\":\"0x667c9bc78beae7b5d70a40ee26cff9a526bc91d9\",\"to\":\"0xcca1c0abf36528eb9e5c909f8296738d37b481aa\",\"data\":\"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":53,\"jsonrpc\":\"2.0\"}","requestMethod":"POST","serverError":{"errno":-54,"code":"ECONNRESET","syscall":"read"},"url":"http://151.97.253.68:8545"}, tx={"data":"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001","to":{},"from":"0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9","type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x05d21dba00"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x05d21dba00"},"nonce":{},"gasLimit":{},"chainId":{}}, code=UNPREDICTABLE_GAS_LIMIT, version=abstract-signer/5.6.2)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/abstract-signer/lib/index.js:365:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 7) {
+  reason: 'cannot estimate gas; transaction may fail or may require manual gas limit',
+  code: 'UNPREDICTABLE_GAS_LIMIT',
+  error: Error: missing response (requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"type\":\"0x2\",\"maxFeePerGas\":\"0x5d21dba00\",\"maxPriorityFeePerGas\":\"0x5d21dba00\",\"from\":\"0x667c9bc78beae7b5d70a40ee26cff9a526bc91d9\",\"to\":\"0xcca1c0abf36528eb9e5c909f8296738d37b481aa\",\"data\":\"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":53,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+      at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+      at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+      at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+      at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+      at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+      at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: 'missing response',
+    code: 'SERVER_ERROR',
+    requestBody: '{"method":"eth_estimateGas","params":[{"type":"0x2","maxFeePerGas":"0x5d21dba00","maxPriorityFeePerGas":"0x5d21dba00","from":"0x667c9bc78beae7b5d70a40ee26cff9a526bc91d9","to":"0xcca1c0abf36528eb9e5c909f8296738d37b481aa","data":"0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001"}],"id":53,"jsonrpc":"2.0"}',
+    requestMethod: 'POST',
+    serverError: Error: read ECONNRESET
+        at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'http://151.97.253.68:8545'
+  },
+  tx: {
+    data: '0x5795fa0e00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000019000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001',
+    to: Promise { '0xCCa1c0aBf36528EB9e5c909F8296738D37B481aa' },
+    from: '0x667C9Bc78BEAe7B5d70A40ee26CFF9a526bc91d9',
+    type: 2,
+    maxFeePerGas: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+    maxPriorityFeePerGas: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+    nonce: Promise { 16 },
+    gasLimit: Promise { <rejected> [Circular *1] },
+    chainId: Promise { 73799 }
+  }
+}
+[2022-09-05T13:34:25.370] [INFO] iot - 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x2661af6D299E142501eA0c9334E3Af653ae620b3 - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x9E447Bf90b086b1db4453D77De5A620918d8342D - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0xc60402099B325726211d96493070816A5fE05e1C - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 - Agreement Sent
+[2022-09-05T13:34:25.370] [INFO] iot - 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 - Agreement Sent
+[2022-09-05T13:34:25.371] [INFO] iot - 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 - Agreement Sent
+[2022-09-05T13:34:25.372] [INFO] iot - 0x8e961D8087B30E92FbDF795FF878E33B3ff9C254 - Agreement Sent
+[2022-09-05T13:34:25.372] [INFO] iot - 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 - Agreement Sent
+[2022-09-05T13:34:25.372] [INFO] iot - 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba - Agreement Sent
+[2022-09-05T13:34:25.372] [INFO] iot - 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 - Agreement Sent
+[2022-09-05T13:34:25.372] [INFO] iot - 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 - Agreement Sent
+[2022-09-05T13:34:25.373] [INFO] iot - 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 - Agreement Sent
+[2022-09-05T13:34:25.373] [INFO] iot - 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C - Agreement Sent
+[2022-09-05T13:34:25.373] [INFO] iot - 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 - Agreement Sent
+[2022-09-05T13:34:25.373] [INFO] iot - 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 - Agreement Sent
+[2022-09-05T13:34:25.373] [INFO] iot - 0x907D1f09B0c45734a59401a797A332931372230d - Agreement Sent
+[2022-09-05T13:34:25.374] [INFO] iot - 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 - Agreement Sent
+[2022-09-05T13:34:25.374] [INFO] iot - 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d - Agreement Sent
+[2022-09-05T13:34:25.374] [INFO] iot - 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 - Agreement Sent
+[2022-09-05T13:34:25.378] [INFO] iot - 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 - Agreement Sent
+[2022-09-05T13:34:25.379] [INFO] iot - 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0x143D06Db534BEdb0A5baFdd78720A2fE7ae16Bd3 - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0xd0F89269B30150b221027D60a5D11CaaF1EB939b - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0xF833D903E4E960d3C1403B3Da6482E3A6fa4FC64 - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab - Agreement Sent
+[2022-09-05T13:34:25.380] [INFO] iot - 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B - Agreement Sent
+[2022-09-05T13:34:25.381] [INFO] iot - 0x2fB4BF68407b4b79a8a0482A945953A26d9f8B54 - Agreement Sent
+[2022-09-05T13:34:25.381] [INFO] iot - 0xb30EC68a81BEE3588eec4E525e3d2d10bE8807BB - Agreement Sent
+[2022-09-05T13:34:25.382] [INFO] iot - 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 - Agreement Sent
+[2022-09-05T13:34:25.382] [INFO] iot - 0x929755d256FAcFF26b8e9158B5d5dA999137D915 - Agreement Sent
+[2022-09-05T13:34:25.383] [INFO] iot - 0xe3bE0Da0470F207203581A3038C9fD07c0c477f5 - Agreement Sent
+[2022-09-05T13:34:25.385] [INFO] iot - 0xa6E81878e63a5e2f6288A31c22F9808A4d1d687C - Agreement Sent
+[2022-09-05T13:34:25.385] [INFO] iot - 0x29Fb6625F46877aAe7c4422A6c18bf03330e47a5 - Agreement Sent
+[2022-09-05T13:34:25.385] [INFO] iot - 0x1A3707004D428D7ad32df14d3FA9a83fb279D4eE - Agreement Sent
+[2022-09-05T13:34:25.385] [INFO] iot - 0x2A8BFadfBC58B15EFcfbaB97a584477F57348a14 - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0x675cdAFfbC2d20949Fd8F3AF0d8ceEEff74f6270 - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0xaf43110154bEdf396f4cc5947C233e28e4fed4bA - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0x96929e51fe4C26B9EcbDD178F97F6a31C238DD35 - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0x669F299b707A448e8161d0785Dcbb6E12DE6733b - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0x5c988dE4888164890DfE8B8d5BA24d9A61477c01 - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0x1D2e0aCd7A4c405ccBe02E7eA136fE4A963b14b1 - Agreement Sent
+[2022-09-05T13:34:25.386] [INFO] iot - 0x4DE3E277554A0FEE4Abe83048A0db20eF756F353 - Agreement Sent
+[2022-09-05T13:34:25.388] [INFO] iot - 0x0b34Ef8536A384e966B62d48f38775CA9a429715 - Agreement Sent
+[2022-09-05T13:34:25.388] [INFO] iot - 0x80e1FA7Ef2fdfD40B9A53B4FdC3458D2EadCfCC1 - Agreement Sent
+[2022-09-05T13:34:25.391] [INFO] iot - 0x17D903588e29b28bDAEbac7f9c261AF030F905ae - Agreement Sent
+[2022-09-05T13:34:25.391] [INFO] iot - 0xe91e9Ceac8cD4637dC4A28198F1Ca322Ed0f9760 - Agreement Sent
+[2022-09-05T13:34:25.391] [INFO] iot - 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 - Agreement Sent
+[2022-09-05T13:34:25.391] [INFO] iot - 0xF0Ed60E8E42D15Fa7e1ac4bE075613a1C4C45c44 - Agreement Sent
+[2022-09-05T13:34:25.391] [INFO] iot - 0x0A7DfE7f8123Ee3F42d7CCae7a6b0e7ac4B513F2 - Agreement Sent
+[2022-09-05T13:34:25.393] [INFO] iot - 0x559Ba5d9116E8984a076b02b1B3185108Df610a9 - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0x93C3ECf7C71F69a2d97040012abf71b0c69a42F6 - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0xD40C57F57dF6C2f8D482Aac8554F4464cB4B67Bd - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0xC1C2e13B41CC0FDbe0026ED46a0801563846579f - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0xff856E261864eBbc9adD47825dd773950f859228 - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0xac636D5658b40d62e499d44cD99BEFb794FCb63E - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0x64BE97a6BdBB9a11bb660B4E04cB1f51081bAaF7 - Agreement Sent
+[2022-09-05T13:34:25.396] [INFO] iot - 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 - Agreement Sent
+[2022-09-05T13:34:25.397] [INFO] iot - 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 - Agreement Sent
+[2022-09-05T13:34:25.397] [INFO] iot - 0x2533E0Da9F0529C4D0F94aFc3E860830a230BA8B - Agreement Sent
+[2022-09-05T13:34:25.397] [INFO] iot - 0x8972341a88cA7458f57988f99D8dFf833a76D683 - Agreement Sent
+[2022-09-05T13:34:25.402] [INFO] iot - 0x9Cb065289a7B5E88C9E67A4740F9dd56945Beb14 - Agreement Sent
+[2022-09-05T13:34:25.403] [INFO] iot - 0x31aD1d48e3b4Ea9Cee418937668A4008e4A85fD2 - Agreement Sent
+[2022-09-05T13:34:25.403] [INFO] iot - 0x6Ee69909894dFD89df0E0e200f405AE8421b4b59 - Agreement Sent
+[2022-09-05T13:34:25.403] [INFO] iot - 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 - Agreement Sent
+[2022-09-05T13:34:25.403] [INFO] iot - 0x83fCdEA68B9Fba98Cd2DC3F419718C13d1Cc7B77 - Agreement Sent
+[2022-09-05T13:34:25.435] [INFO] iot - 0x058D9bD43544268934BbFf41851eDfaca8896ED8 - Agreement Sent
+[2022-09-05T13:34:25.442] [INFO] iot - 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 - Agreement Sent
+[2022-09-05T13:34:25.460] [INFO] iot - 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a - Agreement Sent
+[2022-09-05T13:34:25.465] [INFO] iot - 0x26a8326133c0da55d91AC2edD9a7D705EA18dCfE - Agreement Sent
+[2022-09-05T13:34:25.466] [INFO] iot - 0x7ed97E3c4Be4A594c0f9D1601F6Fc6195457b40B - Agreement Sent
+[2022-09-05T13:34:25.466] [INFO] iot - 0x9e1b2dA6bFa5A21519cE387E05d2c3528CAB57eB - Agreement Sent
+[2022-09-05T13:34:25.509] [INFO] iot - 0x766eAaf86306e25955D41ac611f6885AfA1164a8 - Agreement Sent
+[2022-09-05T13:34:25.509] [INFO] iot - 0x6e70672380465bdCd0574cfF8fFAaAae8858375C - Agreement Sent
+[2022-09-05T13:34:25.515] [INFO] iot - 0x79a38982825be307FE2F332F9E40C732Ab7Adb59 - Agreement Sent
+[2022-09-05T13:34:25.517] [INFO] iot - 0x84a5736430885cbe526731b0d14373DA71C04f6c - Agreement Sent
+[2022-09-05T13:34:25.556] [INFO] iot - 0x72D29e79A94e889aa06527Fe3e1E1DD873C53879 - Agreement Sent
+[2022-09-05T13:34:25.558] [INFO] iot - 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe - Agreement Sent
+[2022-09-05T13:34:25.558] [INFO] iot - 0xE65626DFcfeF5a3264b81274B36aeB612fd0f9f1 - Agreement Sent
+[2022-09-05T13:34:25.560] [INFO] iot - 0x885ABbfF09B584a44b6f5B8686E0bFb5a4771097 - Agreement Sent
+[2022-09-05T13:34:25.573] [INFO] iot - 0xB329F4a74dfF55C488A25D70EA6Db5116d32b23D - Agreement Sent
+[2022-09-05T13:34:25.573] [INFO] iot - 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 - Agreement Sent
+[2022-09-05T13:34:25.585] [INFO] iot - 0x111Ab7fb8078359474f217e23DdFB0A494C1fF5C - Agreement Sent
+[2022-09-05T13:34:25.587] [INFO] iot - 0xC9F0C6ED4E68B00B915c70a3cE34fc73D8564b34 - Agreement Sent
+[2022-09-05T13:34:25.587] [INFO] iot - 0xa492E331Fee4dCaCf15A9A537d92013F563D6814 - Agreement Sent
+[2022-09-05T13:34:25.587] [INFO] iot - 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 - Agreement Sent
+[2022-09-05T13:34:25.589] [INFO] iot - 0xC4671118D6dE5299BC631EC6E8D480De79005b3c - Agreement Sent
+[2022-09-05T13:34:25.591] [INFO] iot - 0xEa2392232c8274383202b8a2a3Fb53C050FAA5F0 - Agreement Sent
+[2022-09-05T13:34:25.594] [INFO] iot - 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 - Agreement Sent
+[2022-09-05T13:34:25.594] [INFO] iot - 0xBe98C0bfefa813798158805E5212C0f1ffEA894B - Agreement Sent
+[2022-09-05T13:34:25.594] [INFO] iot - 0xf7871CE8846Be2c1389244d0DaD24c3420eb4414 - Agreement Sent
+[2022-09-05T13:34:25.793] [WARN] iot - 0x3046cA212B09b023b69bf5e080bBd87aBDB00C38 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:25.825] [WARN] iot - 0x4c5922016c0719F3be058ae7065e82aD1c897969 - Registering agreement Error: missing response (requestBody="{\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false],\"id\":46,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"errno":-54,"code":"ECONNRESET","syscall":"read"}, url="http://151.97.253.68:8545", code=SERVER_ERROR, version=web/5.6.1)
+    at Logger.makeError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at /Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:252:36
+    at step (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:33:23)
+    at Object.throw (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:14:53)
+    at rejected (/Users/andrea/Documents/gitub/EW-DER-Simulator/node_modules/@ethersproject/web/lib/index.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'missing response',
+  code: 'SERVER_ERROR',
+  requestBody: '{"method":"eth_getBlockByNumber","params":["latest",false],"id":46,"jsonrpc":"2.0"}',
+  requestMethod: 'POST',
+  serverError: Error: read ECONNRESET
+      at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  },
+  url: 'http://151.97.253.68:8545'
+}
+[2022-09-05T13:34:25.853] [INFO] iot - 0xb431E0193193790601F40659D038fc5e70aA192F - Agreement Sent
+[2022-09-05T13:34:25.859] [INFO] iot - 0xB497C077f97d979Bcada841342f00bAe480f2e4C - Agreement Sent
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0x79a38982825be307FE2F332F9E40C732Ab7Adb59 [10,2,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0xB497C077f97d979Bcada841342f00bAe480f2e4C [460,115,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0x96929e51fe4C26B9EcbDD178F97F6a31C238DD35 [280,70,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0xA7311B04105e4fB1F0b2b8F49aC0111C3A52374a [280,70,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0xEe2b37982a0e7A411C4be7b8F36b90bf722bd379 [190,47,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0xb7E6C203d5aDDB62C1910E10eca593e82c605660 [100,25,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0xb30EC68a81BEE3588eec4E525e3d2d10bE8807BB [190,47,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.230] [INFO] aggregator - RegisterAgreementEvent 0xBe98C0bfefa813798158805E5212C0f1ffEA894B [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x64BE97a6BdBB9a11bb660B4E04cB1f51081bAaF7 [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0xa6E81878e63a5e2f6288A31c22F9808A4d1d687C [190,47,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x082C6eA94fBd4b67232227bd2c7D19e7d3DC981d [370,92,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x2411811e7Cf20e106A6Cf5eF7b7d661E2a591cB0 [100,25,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x72D29e79A94e889aa06527Fe3e1E1DD873C53879 [10,2,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x4D6045DAd301F3A8889a40a1893EC5800f1dB177 [280,70,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0xCA8cc784132a6e7c5e7fD2E9Fc865fC6d9117CB0 [280,70,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x929755d256FAcFF26b8e9158B5d5dA999137D915 [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x6e70672380465bdCd0574cfF8fFAaAae8858375C [370,92,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0xF0Ed60E8E42D15Fa7e1ac4bE075613a1C4C45c44 [100,25,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x077Ae5e9b424ad1B50a37059D0Be7d628D251077 [190,47,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x26a8326133c0da55d91AC2edD9a7D705EA18dCfE [190,47,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x2533E0Da9F0529C4D0F94aFc3E860830a230BA8B [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0x1A3707004D428D7ad32df14d3FA9a83fb279D4eE [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.231] [INFO] aggregator - RegisterAgreementEvent 0xac636D5658b40d62e499d44cD99BEFb794FCb63E [190,47,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xe91e9Ceac8cD4637dC4A28198F1Ca322Ed0f9760 [100,25,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x2fB4BF68407b4b79a8a0482A945953A26d9f8B54 [370,92,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xa77330AFf52A46456f5CD757bbB5dBb3BA5aeeaF [460,115,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xBf408636AfBBa2fc0AD074C1bB7ba85aE9c12ED3 [190,47,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x9Cb065289a7B5E88C9E67A4740F9dd56945Beb14 [100,25,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x143D06Db534BEdb0A5baFdd78720A2fE7ae16Bd3 [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x4DE3E277554A0FEE4Abe83048A0db20eF756F353 [550,137,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x669F299b707A448e8161d0785Dcbb6E12DE6733b [280,70,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x93C3ECf7C71F69a2d97040012abf71b0c69a42F6 [100,25,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x2bF3CfA69cfA809d5213b337284f3fdF705199bA [100,25,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xC1C2e13B41CC0FDbe0026ED46a0801563846579f [280,70,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xa492E331Fee4dCaCf15A9A537d92013F563D6814 [370,92,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x2661af6D299E142501eA0c9334E3Af653ae620b3 [100,25,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x7a12E37DE3A6D2340218a4eC857062Af576BF46c [280,70,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x811Ca3ca809B9887e2EA67266Fa7584748AC05A7 [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x28520A46206DA36b4E2f21C051052AC081b9EFF4 [280,70,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x8972341a88cA7458f57988f99D8dFf833a76D683 [190,47,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xF6639f23A0F2AFB3Bc30b254ba173C6Bd16d9CFe [100,25,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x29Fb6625F46877aAe7c4422A6c18bf03330e47a5 [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0x7ed97E3c4Be4A594c0f9D1601F6Fc6195457b40B [10,2,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.232] [INFO] aggregator - RegisterAgreementEvent 0xdEB6d8D02B0D937D0c9D8E2830B6aAd37B11D930 [10,2,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xE65626DFcfeF5a3264b81274B36aeB612fd0f9f1 [370,92,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xF42E9C9BccFAfe01cFebd18B2869E71694eC26ab [10,2,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x766eAaf86306e25955D41ac611f6885AfA1164a8 [100,25,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x8e961D8087B30E92FbDF795FF878E33B3ff9C254 [100,25,5,5,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x1D2e0aCd7A4c405ccBe02E7eA136fE4A963b14b1 [370,92,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x054D269c4510DC315aDD7E859Fff40BFcE33DA62 [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x111Ab7fb8078359474f217e23DdFB0A494C1fF5C [10,2,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xbe4aFCA70bFE1f29Db8b748f0B8E84D9685ff6ba [190,47,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x8E0B0a1BD46882BE21538F101d722cBA2e5423B7 [100,25,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x0A7DfE7f8123Ee3F42d7CCae7a6b0e7ac4B513F2 [100,25,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x3B0075F5141B0895D54cb8896b043630d00dB2C9 [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xE704Ff8B1b5016Fa9366e96cB6FdA04036fFaE5C [280,70,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xB8E6Ede7891D10b8c97f598eAa14c1bC65fA6aa7 [550,137,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xF833D903E4E960d3C1403B3Da6482E3A6fa4FC64 [10,2,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x90BD7b12cf4579876fb2FbB900919e770fFe07a1 [100,25,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0x0b34Ef8536A384e966B62d48f38775CA9a429715 [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xB329F4a74dfF55C488A25D70EA6Db5116d32b23D [370,92,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xaeB200981B0Bd6773D014e7aA78ecCBBb9300c35 [10,2,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xC4671118D6dE5299BC631EC6E8D480De79005b3c [100,25,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.233] [INFO] aggregator - RegisterAgreementEvent 0xff856E261864eBbc9adD47825dd773950f859228 [280,70,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xc60402099B325726211d96493070816A5fE05e1C [280,70,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x31aD1d48e3b4Ea9Cee418937668A4008e4A85fD2 [100,25,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x48a8CE396E298A4300b8068053035cA97ae3A6E9 [100,25,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x885ABbfF09B584a44b6f5B8686E0bFb5a4771097 [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x17D903588e29b28bDAEbac7f9c261AF030F905ae [370,92,1,1,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x9E447Bf90b086b1db4453D77De5A620918d8342D [10,2,5,5,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x2f0B537787B0b62EBBc6a79975EAf7b8BAE8f578 [190,47,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xf8AFd06A2a24750714a841ae7e51b98C6376B5E2 [280,70,4,4,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xC9F0C6ED4E68B00B915c70a3cE34fc73D8564b34 [280,70,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x907D1f09B0c45734a59401a797A332931372230d [280,70,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xd0F89269B30150b221027D60a5D11CaaF1EB939b [190,47,0,0,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x2f90d154CF720d91E3f22A969B0f66Ec744425F5 [190,47,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xb1E3229efBf72c10b15Ca89928E14a14C64B3315 [100,25,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x80e1FA7Ef2fdfD40B9A53B4FdC3458D2EadCfCC1 [280,70,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x9e1b2dA6bFa5A21519cE387E05d2c3528CAB57eB [280,70,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xb431E0193193790601F40659D038fc5e70aA192F [100,25,2,2,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0x83fCdEA68B9Fba98Cd2DC3F419718C13d1Cc7B77 [190,47,3,3,1] - Block 19208270
+[2022-09-05T13:34:36.234] [INFO] aggregator - RegisterAgreementEvent 0xaf43110154bEdf396f4cc5947C233e28e4fed4bA [190,47,2,2,1] - Block 19208270
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0x1e208f96C15b717321F2f7486e0ae803Eb13Dc2B [10,2,4,4,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0x2Ad98F6E0cDcB415FfB6a387bDF858227598C896 [100,25,1,1,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0x6Ee69909894dFD89df0E0e200f405AE8421b4b59 [190,47,0,0,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0x404FFA418223ca78B40e19ea640BbDa31d96f4E5 [10,2,3,3,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0xf7871CE8846Be2c1389244d0DaD24c3420eb4414 [280,70,4,4,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0x0deeC50a7E69626cd246EaCB3a2cD7833567E11A [100,25,1,1,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0x559Ba5d9116E8984a076b02b1B3185108Df610a9 [190,47,1,1,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0xEa2392232c8274383202b8a2a3Fb53C050FAA5F0 [190,47,0,0,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0xca0D41BE44c2Cc707478457D4fEEa3C702222014 [100,25,3,3,1] - Block 19208271
+[2022-09-05T13:34:45.015] [INFO] aggregator - RegisterAgreementEvent 0xe3bE0Da0470F207203581A3038C9fD07c0c477f5 [280,70,1,1,1] - Block 19208271
+[2022-09-05T13:34:45.016] [INFO] aggregator - RegisterAgreementEvent 0x351C2048A1979233950Ea6098081b46Ff5f3Be39 [190,47,1,1,1] - Block 19208271
+[2022-09-05T13:34:45.016] [INFO] aggregator - RegisterAgreementEvent 0x5c988dE4888164890DfE8B8d5BA24d9A61477c01 [280,70,4,4,1] - Block 19208271
+[2022-09-05T13:34:52.181] [INFO] aggregator - RegisterAgreementEvent 0x84a5736430885cbe526731b0d14373DA71C04f6c [100,25,1,1,1] - Block 19208273
+[2022-09-05T13:34:52.182] [INFO] aggregator - RegisterAgreementEvent 0xFd780B35Eb510930A5dF9024201E432Fc3EC3174 [190,47,2,2,1] - Block 19208273
+[2022-09-05T13:34:52.182] [INFO] aggregator - RegisterAgreementEvent 0x675cdAFfbC2d20949Fd8F3AF0d8ceEEff74f6270 [190,47,0,0,1] - Block 19208273
+[2022-09-05T13:34:52.182] [INFO] aggregator - RegisterAgreementEvent 0x2A8BFadfBC58B15EFcfbaB97a584477F57348a14 [10,2,1,1,1] - Block 19208273
+[2022-09-05T13:34:52.182] [INFO] aggregator - RegisterAgreementEvent 0x058D9bD43544268934BbFf41851eDfaca8896ED8 [190,47,3,3,1] - Block 19208273
+[2022-09-05T13:34:52.182] [INFO] aggregator - RegisterAgreementEvent 0x01c5D9bE60FBF8dfC07eE36345147eF267a65F0a [190,47,5,5,1] - Block 19208273
+[2022-09-05T13:34:52.182] [INFO] aggregator - RegisterAgreementEvent 0xD40C57F57dF6C2f8D482Aac8554F4464cB4B67Bd [280,70,4,4,1] - Block 19208273
